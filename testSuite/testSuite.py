@@ -4,7 +4,6 @@ from util import readExcel,get_path
 from common import HTMLTestRunner,SendEmail
 
 
-
 readExcel=readExcel.ReadExcel().read_excel(get_path.getPath()+'data/interfaces.xlsx','bi')
 getpath=get_path.getPath()
 resultHtml=os.path.join(getpath+'result')
@@ -54,7 +53,7 @@ class TestSuite():
             if suite is not None:
                 runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title='Test Report', description='Test Description')
                 runner.run(suite)
-                #SendEmail()
+                #发送邮件这里加
             else:
                 print('suite is None')
         except Exception as e:

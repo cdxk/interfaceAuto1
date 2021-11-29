@@ -219,9 +219,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>Test Report</h1>
-<p class='attribute'><strong>Start Time:</strong> 2021-11-03 16:07:59</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:00.038313</p>
-<p class='attribute'><strong>Status:</strong> Pass 1</p>
+<p class='attribute'><strong>Start Time:</strong> 2021-11-22 15:54:15</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:08.442262</p>
+<p class='attribute'><strong>Status:</strong> Error 1</p>
 
 <p class='description'>Test Description</p>
 </div>
@@ -262,33 +262,60 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='passClass'>
-    <td>apiTest.TestApi</td>
-    <td>1</td>
+<tr class='errorClass'>
+    <td>carDispatchTest.TestCarDispatch</td>
     <td>1</td>
     <td>0</td>
     <td>0</td>
+    <td>1</td>
     <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
 </tr>
 
-<tr id='pt1.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_case_1: 查看告警列表</div></td>
+<tr id='ft1.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_long_allagree</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        error</a>
 
-    <div id='div_pt1.1' class="popup_window">
+    <div id='div_ft1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt1.1: 测试开始。。。
-用例body:{}
-测试结束。。。
+ft1.1: 百口泉值班车测试开始。。。
+carDispatch开始。。。
+y
+y
+y
+y
+y
+y
+y
+n
+y
+y
+y
+None
+长途
+新增数据失败
+流程出错
+百口泉值班车测试结束。。。
+Traceback (most recent call last):
+  File "/git/interfaceAuto/testCase/carDispatchTest.py", line 32, in test_long_allagree
+    self.dispatch.addAndCommit('长途')
+  File "/git/interfaceAuto/modelMethod/carDispatch.py", line 65, in addAndCommit
+    raise e
+  File "/git/interfaceAuto/modelMethod/carDispatch.py", line 62, in addAndCommit
+    interdata['processDefinitionId'],interdata['taskNumber'],interdata['assertinterface'])
+  File "/git/interfaceAuto/modelMethod/carDispatch.py", line 182, in checkresult
+    data=self.getTodoDataBytitle(assertinterface)
+  File "/git/interfaceAuto/modelMethod/carDispatch.py", line 165, in getTodoDataBytitle
+    editConfig.EditConfig("CARDISPATCH", "taskId", d['taskId'])
+TypeError: __init__() takes 1 positional argument but 4 were given
 
 
         </pre>
@@ -301,9 +328,9 @@ pt1.1: 测试开始。。。
 <tr id='total_row'>
     <td>Total</td>
     <td>1</td>
-    <td class="text text-success">1</td>
+    <td class="text text-success">0</td>
     <td class="text text-danger">0</td>
-    <td class="text text-warning">0</td>
+    <td class="text text-warning">1</td>
     <td>&nbsp;</td>
 </tr>
 </table>
@@ -313,7 +340,7 @@ pt1.1: 测试开始。。。
     <script type="text/javascript">
 var data = [
 	{
-		value: 0,
+		value: 1,
 		color: "#ebccd1",
 		label: "Error",
 		labelColor: 'white',
@@ -327,7 +354,7 @@ var data = [
 		labelFontSize: '16'
 	},
 	{
-		value : 1,
+		value : 0,
 		color : "#d6e9c6",
 		label : "Pass",
 		labelColor: 'white',
