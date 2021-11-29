@@ -53,7 +53,7 @@ class TestSuite():
             if suite is not None:
                 runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title='Test Report', description='Test Description')
                 runner.run(suite)
-                #SendEmail()
+                #发送邮件这里加
             else:
                 print('suite is None')
         except Exception as e:

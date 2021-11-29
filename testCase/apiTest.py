@@ -48,8 +48,8 @@ class TestApi(unittest.TestCase):
         print("测试结束。。。")
         logs.info("测试结束。。。")
     def checkresult(self,name,interface,header,method,param,result):
-        new_url=geturl.GetUrl().get_url()
-        results=configHttp.ConfigHttp().run_method(method,new_url+interface,header,param)
+        #new_url=geturl.GetUrl().get_url()
+        results=configHttp.ConfigHttp().run_method(method,interface,header,param)
         # 将json转化为python编码
         res=json.loads(results)
         logs.info('用例body:%s' % param)

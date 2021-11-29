@@ -46,7 +46,7 @@ class ReadExcel:
         for row in rows[1:]:
             i=i+1
             cumvalue=sheettable["G"+str(i)].value
-            print(cumvalue)
+            # print(cumvalue)
             dic={}
             #过滤不需要执行的用例数据
             if cumvalue=='y':
