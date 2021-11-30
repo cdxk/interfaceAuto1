@@ -1,7 +1,7 @@
 import os
 import unittest
 from util import readExcel,get_path
-from common import HTMLTestRunner,SendEmail
+from common import HTMLTestRunner#,SendEmail
 
 
 readExcel=readExcel.ReadExcel().read_excel(get_path.getPath()+'data/interfaces.xlsx','bi')

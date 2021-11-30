@@ -17,7 +17,7 @@ case=None
 title=''
 res=None
 getpath=get_path.getPath()
-class TestCarDispatch(unittest.TestCase):
+class TestFaultAlarm(unittest.TestCase):
     def setUp(self):
         print("故障告警工单测试开始。。。")
         self.dispatch=carDispatch.CarDispatch('故障')
@@ -46,9 +46,9 @@ class TestCarDispatch(unittest.TestCase):
         try:
             self.dispatch.addAndCommit('创建提交领导审核')
             self.dispatch.approve('作业区值班领导同意')
-            self.dispatch.approve('厂调审核需领导审核')
-            self.dispatch.approve('生产运行科同意无需领导')
-            self.dispatch.approve('录入处理意见')
+            # self.dispatch.approve('厂调审核需领导审核')
+            # self.dispatch.approve('生产运行科同意无需领导')
+            # self.dispatch.approve('录入处理意见')
             logs.info("===故障工单流程全部通过处理完毕===")
         except Exception:
             print('流程出错')
