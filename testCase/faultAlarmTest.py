@@ -46,6 +46,7 @@ class TestFaultAlarm(unittest.TestCase):
         try:
             self.dispatch.addAndCommit('创建提交领导审核')
             self.dispatch.approve('作业区值班领导同意')
+            print("用例执行完毕")
             # self.dispatch.approve('厂调审核需领导审核')
             # self.dispatch.approve('生产运行科同意无需领导')
             # self.dispatch.approve('录入处理意见')
