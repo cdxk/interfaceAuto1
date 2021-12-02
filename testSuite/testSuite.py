@@ -15,7 +15,7 @@ class TestSuite():
         global resultPath
         resultPath=os.path.join(resultHtml+'/report.html')
         print(resultPath)
-        self.testcase=os.path.join(getpath+'testCase/')
+        self.testcase=os.path.join(getpath+'testCase')
         self.casefile=os.path.join(getpath+'util/caselist.txt')
         self.caselists=[]
 
@@ -45,7 +45,6 @@ class TestSuite():
                 for test_name in suite:
                     print("******"+str(test_name))
                     test_suite.addTest(test_name)
-
         else:
             return None
         return test_suite
