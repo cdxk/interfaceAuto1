@@ -15,7 +15,7 @@ class TestSuite():
         global resultPath
         resultPath=os.path.join(resultHtml+'/report.html')
         print(resultPath)
-        self.testcase=os.path.join(getpath+'testCase')
+        self.testcase='./testCase'#os.path.join(getpath+'testCase')
         self.casefile=os.path.join(getpath+'util/caselist.txt')
         self.caselists=[]
 
