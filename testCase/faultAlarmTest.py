@@ -4,7 +4,7 @@
 
 from common import configHttp
 from common.log import logs
-from modelMethod import carDispatch
+from model import carDispatch
 from util import readConfig,readExcel,geturl,get_path,editConfig
 import json
 import unittest
