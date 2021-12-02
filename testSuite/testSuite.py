@@ -11,6 +11,7 @@ resultHtml=os.path.join(getpath+'result')
 class TestSuite():
 
     def __init__(self):
+        print("=========testsuite开始")
         global resultPath
         resultPath=os.path.join(resultHtml+'/report.html')
         print(resultPath)

@@ -27,29 +27,29 @@ class TestCarDispatch(unittest.TestCase):
         logs.info("百口泉值班车测试结束。。。")
 
     #长途车全部通过流程
-    def test_long_allagree(self):
-        try:
-            self.dispatch.addAndCommit('长途')
-            # self.dispatch.approve('申请领导审批通过')
-            # self.dispatch.approve('长途生产运行科通过')
-            # self.dispatch.approve('值班厂领导审批通过')
-            # self.dispatch.approve('厂调盖章')
-            logs.info("===长途车流程全部通过处理完毕===")
-        except Exception:
-            print('流程出错')
-            logs.error("===长途车流程全部通过处理出错===")
-            raise
-    # #短途全部通过
-    # def test_short_allagree(self):
+    # def test_long_allagree(self):
     #     try:
-    #         self.dispatch.addAndCommit('短途')
+    #         self.dispatch.addAndCommit('长途')
     #         self.dispatch.approve('申请领导审批通过')
-    #         self.dispatch.approve('短途生产运行科通过')
-    #         self.dispatch.approve('厂调盖章')
-    #         logs.info("===短途车流程全部通过处理完毕===")
+    #         self.dispatch.approve('长途生产运行科通过')
+    #         # self.dispatch.approve('值班厂领导审批通过')
+    #         # self.dispatch.approve('厂调盖章')
+    #         logs.info("===长途车流程全部通过处理完毕===")
     #     except Exception:
-    #         logs.info("===短途车流程全部通过处理完毕===")
+    #         print('流程出错')
+    #         logs.error("===长途车流程全部通过处理出错===")
     #         raise
+    # #短途全部通过
+    def test_short_allagree(self):
+        try:
+            self.dispatch.addAndCommit('短途')
+            self.dispatch.approve('申请领导审批通过')
+            # self.dispatch.approve('短途生产运行科通过')
+            # self.dispatch.approve('厂调盖章')
+            logs.info("===短途车流程全部通过处理完毕===")
+        except Exception:
+            logs.info("===短途车流程全部通过处理完毕===")
+            raise
     # #申请领导拒绝
     # def test_applyLeader_refused(self):
     #     try:
