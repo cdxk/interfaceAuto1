@@ -15,7 +15,7 @@ class TestSuite():
         global resultPath
         resultPath=os.path.join(resultHtml+'/report.html')
         print(resultPath)
-        self.testcase=os.path.join(getpath+'testCase/')
+        self.testcase=os.path.join(getpath+'testCase')
         self.casefile=os.path.join(getpath+'util/caselist.txt')
         self.caselists=[]
 
@@ -34,14 +34,18 @@ class TestSuite():
         test_module=[]
         self.set_case_list()
         for case in self.caselists:
-            print(case+'.py')
+            print(self.testcase+case+'.py')
             discover=unittest.defaultTestLoader.discover(self.testcase,pattern=case+'.py',top_level_dir=None)
             test_module.append(discover)
             print('test_module:'+str(test_module))
         if len(test_module) > 0:
             for suite in test_module:
-                for test_name in suite:
-                    test_suite.addTest(test_name)
+                print('suite:' + str(suite))
+                test_suite.addTest(suite)
+                # for test_name in suite:
+                #     print("******"+str(test_name))
+                #     test_suite.addTest(test_name)
+
         else:
             return None
         return test_suite
