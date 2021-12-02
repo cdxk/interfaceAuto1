@@ -41,10 +41,10 @@ class TestSuite():
         if len(test_module) > 0:
             for suite in test_module:
                 print('suite:' + str(suite))
-                test_suite.addTest(suite)
-                # for test_name in suite:
-                #     print("******"+str(test_name))
-                #     test_suite.addTest(test_name)
+                # test_suite.addTest(suite)
+                for test_name in suite:
+                    print("******"+str(test_name))
+                    test_suite.addTest(test_name)
 
         else:
             return None
