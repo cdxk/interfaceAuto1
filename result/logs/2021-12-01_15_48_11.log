@@ -1,8 +1,0 @@
-2021-12-01 15:48:11,900 - root - INFO - 26 - carDispatch开始。。。
-2021-12-01 15:48:11,900 - root - INFO - 24 - 百口泉值班车测试开始。。。
-2021-12-01 15:48:12,839 - root - INFO - 193 - 用例名称:短途
-2021-12-01 15:48:12,841 - root - INFO - 194 - 用例body:{'dispatchId': None, 'title': '短途2021-12-01 15:48:11', 'useTime': '2021-11-12', 'leader': '11806', 'longDistance': '0', 'cars': [{'carName': '新JQ9162蓝 田广林 13519906213', 'carId': '243380571031277568', 'orgId': '243380559601799168', 'orgName': '三达公司车组-采气一厂监控', 'work': None}]}
-2021-12-01 15:48:14,271 - root - INFO - 193 - 用例名称:申请领导审批通过
-2021-12-01 15:48:14,272 - root - INFO - 194 - 用例body:{'param': {'examine': 1, 'comment': '', 'previousStepUsers': '11806', 'longDistance': '1'}, 'preTask': '审核值班车申请', 'comment': '', 'orderType': 'Duty_Bkq_Dispatch', 'optionUser': '11806', 'optionHandle': '同意', 'taskId': '08e20dd1-527b-11ec-ae31-36c1b2542318', 'processInstanceId': '08a0e604-527b-11ec-ae31-36c1b2542318'}
-2021-12-01 15:48:14,495 - root - INFO - 49 - ===短途车流程全部通过处理完毕===
-2021-12-01 15:48:14,496 - root - INFO - 27 - 百口泉值班车测试结束。。。

@@ -1,8 +1,0 @@
-2021-12-02 12:36:56,703 - root - INFO - 26 - carDispatch开始。。。
-2021-12-02 12:36:56,703 - root - INFO - 24 - 故障告警工单测试开始。。。
-2021-12-02 12:36:57,845 - root - INFO - 193 - 用例名称:创建提交领导审核
-2021-12-02 12:36:57,845 - root - INFO - 194 - 用例body:{'title': '创建提交领导审核2021-12-02 12:36:56', 'faultPosition': '的', 'faultTime': '2021-11-24 14:29:03', 'faultType': 4, 'description': '', 'factory': 11806, 'leaderApprove': 1, 'leader': 11806, 'alertId': '', 'alertType': ''}
-2021-12-02 12:36:59,538 - root - INFO - 193 - 用例名称:作业区值班领导同意
-2021-12-02 12:36:59,538 - root - INFO - 194 - 用例body:{'param': {'leader': None, 'examine': 1, 'comment': 'yijian', 'leaderExamine': 0, 'previousStepUsers': '11806'}, 'preTask': '作业区值班领导审核', 'comment': 'yijian', 'processInstanceId': '7b78c72d-5329-11ec-ae31-36c1b2542318', 'taskId': '7bb5f75f-5329-11ec-ae31-36c1b2542318', 'orderType': 'Fault_Dispatch', 'optionUser': None, 'optionHandle': '同意'}
-2021-12-02 12:36:59,879 - root - INFO - 54 - ===故障工单流程全部通过处理完毕===
-2021-12-02 12:36:59,879 - root - INFO - 27 - 故障告警工单测试结束。。。
