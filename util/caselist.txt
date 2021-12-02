@@ -1,1 +1,1 @@
-faultAlarmTest
+testFaultAlarm
