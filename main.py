@@ -9,3 +9,4 @@ sys.path.append(PathProject)
 print("=====构建===开始====")
 TestSuite().run()
 print("=====构建===结束====")
+

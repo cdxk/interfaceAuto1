@@ -35,15 +35,13 @@ class TestSuite():
         self.set_case_list()
         for case in self.caselists:
             print(self.testcase+"/"+case+'.py')
-            discover=unittest.defaultTestLoader.discover(self.testcase,pattern=case+'.py',top_level_dir=None)
+            discover=unittest.TestLoader().discover(self.testcase,pattern=case+'.py',top_level_dir=None)
+            print("discover:"+str(discover))
             test_module.append(discover)
             print('test_module:'+str(test_module))
         if len(test_module) > 0:
             for suite in test_module:
-                print('suite:' + str(suite))
-                # test_suite.addTest(suite)
                 for test_name in suite:
-                    print("******"+str(test_name))
                     test_suite.addTest(test_name)
         else:
             return None
