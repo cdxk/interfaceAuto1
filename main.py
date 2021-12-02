@@ -7,6 +7,8 @@ PathProject = os.path.split(rootPath)[0]
 sys.path.append(rootPath)
 sys.path.append(PathProject)
 print("=====构建===开始====")
-TestSuite().run()
+
 print("=====构建===结束====")
 
+if __name__=='__main__':
+    TestSuite().run()

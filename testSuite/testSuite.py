@@ -4,7 +4,7 @@ from util import readExcel,get_path
 from common import HTMLTestRunner#,SendEmail
 
 
-readExcel=readExcel.ReadExcel().read_excel(get_path.getPath()+'data/interfaces.xlsx','bi')
+# readExcel=readExcel.ReadExcel().read_excel(get_path.getPath()+'data/interfaces.xlsx','bi')
 getpath=get_path.getPath()
 resultHtml=os.path.join(getpath+'result')
 
@@ -14,8 +14,7 @@ class TestSuite():
         print("=========testsuite开始")
         global resultPath
         resultPath=os.path.join(resultHtml+'/report.html')
-        print(resultPath)
-        self.testcase='./testCase'#os.path.join(getpath+'testCase')
+        self.testcase=os.path.join(getpath+'testCase')
         self.casefile=os.path.join(getpath+'util/caselist.txt')
         self.caselists=[]
 
