@@ -44,6 +44,7 @@ class TestFaultAlarm(unittest.TestCase):
     #不需厂领导录意见
     def test_allagree(self):
         try:
+            print("============创建故障工单====")
             self.dispatch.addAndCommit('创建提交领导审核')
             self.dispatch.approve('作业区值班领导同意')
             print("用例执行完毕")
