@@ -19,7 +19,7 @@ def get_log():
     ctime=time.strftime("%Y-%m-%d_%H_%M_%S",time.localtime())
     #日志文件名称
     all_log_name=all_log_path+ctime+'.log'
-    #所有日志：定义一个RotatingFileHandler，最多北方3哥日志文件，每个文件不超过1k
+    #所有日志：定义一个RotatingFileHandler，最多放3个日志文件，每个文件不超过1k
     all_handler=RotatingFileHandler(all_log_name,maxBytes=10*1024,backupCount=10)
     all_handler.setLevel(logging.INFO)
 
