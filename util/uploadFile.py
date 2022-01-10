@@ -1,3 +1,4 @@
+#上传文件返回存储路径
 from common import configHttp
 from util import readExcel
 from util import readConfig,readExcel,geturl,get_path
