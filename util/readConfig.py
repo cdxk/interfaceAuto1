@@ -1,3 +1,4 @@
+#读取config.ini配置文件信息
 import os
 from util import get_path
 import configparser
